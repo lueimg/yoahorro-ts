@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-form-data {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 300px;
+  justify-content: space-around
+}
+
+.App-form-data-container {
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.App-list-item {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-list-item-left {
+  margin: 10px;
+  flex-direction: row;
+}
+
+.App-list-item-right {
+  margin: 10px;
+  flex-direction: row;
+}
+
+.App-list-item-account-transaction {
+  display: flex;
+  flex-direction: row
+}
+
+.Dashboard {
+  justify-content: center;
+  display: flex;
+}
+
+.Dashboard-square {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  display: flex;
+}
+
+.Dashboard-main-square {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40%;
+}

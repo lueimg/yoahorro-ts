@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render app 1`] = `
+<BrowserRouter>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/login"
+      />
+      <Route
+        component={[Function]}
+        path="/404"
+      />
+      <Connect(PrivateRoute)>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/logout"
+        />
+        <Route
+          component={[Function]}
+          path="/"
+        />
+      </Connect(PrivateRoute)>
+    </Switch>
+  </Provider>
+</BrowserRouter>
+`;
