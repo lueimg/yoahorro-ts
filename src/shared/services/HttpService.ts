@@ -20,16 +20,16 @@ const collections = {
 }
 
 export const firebaseApp = _firebase.initializeApp(config);
-
+export const database = firebaseApp.firestore();
+database.settings({timestampsInSnapshots: true})
 
 class HttpService {
 
     uid: string;
     db: _firebase.firestore.Firestore
 
-    constructor() {
-        this.db = firebaseApp.firestore();
-        this.db.settings({timestampsInSnapshots: true})
+    constructor(db) {
+        this.db = db;
     }
 
     validUid () {
@@ -177,4 +177,4 @@ class HttpService {
 
 }
 
-export default new HttpService();
+export default new HttpService(database);

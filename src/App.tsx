@@ -5,7 +5,7 @@ import store from "./store/store";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Login from "./modules/auth/Login";
 import NoMatch from "./shared/ui/NoMatch";
-import PrivateRoute from "./shared/ui/PrivateRoute";
+import PrivateSection from "./shared/ui/PrivateRoute";
 import Logout from './modules/auth/Logout';
 
 import "./App.css";
@@ -27,10 +27,10 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route path="/404" component={NoMatch} />
-            <PrivateRoute>
+            <PrivateSection>
               <Route exact path="/logout" component={Logout} />
               <Route path="/" component={Main} />
-            </PrivateRoute>
+            </PrivateSection>
           </Switch>
         </Provider>
       </BrowserRouter>
